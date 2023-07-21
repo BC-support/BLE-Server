@@ -7,7 +7,7 @@ The guide here assumes your host computer has working Bluetooth hardware along w
 # Installation  
 ## Download mahalia-ble-server
 ```
-git clone 
+git clone git@github.com:BC-support/BLE-Server.git
 cd BLE-Server
 npm install
 ```
@@ -21,7 +21,7 @@ This will show any nearby PHL that's running the mahalia-ble-peripheral.js progr
 
 Connect to a PHL from the above scan with
 ```
-node mahalia-ble-server.js Mahalia --daemon
+sudo node mahalia-ble-server.js Mahalia --daemon
 ```
 Once the connection is made, you can communicate with the PHL via a netcat connection with the localhost port 33337. The BLE server will allow interactive mode operation with the mha process on the PHL.
 
